@@ -1,11 +1,16 @@
-#include <stdio.h>
 int main() {
-int a;
-int b;
-a = 10;
-b = 20;
-int sum = a + b;
-printf("Sum: %d\n", sum);
-return 0;
-}
+    int a;
+    int b;
+    int result;
 
+    a = 10;
+    b = 20;
+
+    result = a + b;
+
+    if (a < b) {
+        result = result + 5;
+    }
+
+    return result;
+}
